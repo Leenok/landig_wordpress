@@ -42,7 +42,7 @@
 }
 .promo{
     height: 800px;
-    background-image: url('./../img/main_bg.jpg');
+    background-image: url('../img/main_bg.jpg');
 }
 .logo{
     margin-top: 39px;
@@ -113,7 +113,7 @@
 /* optimization */
 .optimization{
     margin-top: 47px;
-    background-image: url('./../img/woman_bg.png');
+    background-image: url('../img/woman_bg.png');
     background-repeat: no-repeat;
     background-position-x: 8%;
 
@@ -141,7 +141,7 @@
 
 /* you-can-got */
 .you-can-got{
-    background-image: url('./../img/second_bg.jpg');
+    background-image: url('../img/second_bg.jpg');
     background-repeat: no-repeat;
 }
 .you-can-got h3{
