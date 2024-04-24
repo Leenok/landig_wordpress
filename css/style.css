@@ -143,6 +143,7 @@
 .you-can-got{
     background-image: url('../img/second_bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .you-can-got h3{
     margin-top: 86px;
@@ -177,4 +178,57 @@
 }
 .advantage p{
     margin-top: 10px;
+}
+
+/* gift */
+.gift{
+    background: #EFEFEF;
+}
+.gift-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 88px;
+}
+.gift-info img{
+    max-width: 154px;
+    margin: 0 auto;
+}
+.gift-info p{
+    margin-top: 45px;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+
+/* first-lesson */
+.first-lesson{
+    margin-bottom: 54px;
+}
+.first-lesson p{
+    font-size: 23px;
+    margin-top: 24px;
+}
+.big{
+    font-size: 30;
+    text-transform: uppercase;
+}
+.first-lesson img{
+    min-width: 340px;
+    margin-top: 89px;
+}
+.first-lesson h3{
+    margin-top: 25px;
+    font-size: 36px;
+    color: #299CBD;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    background: #1A1A1A;
+    height: 170px;
+    color: #888888;
 }
