@@ -3,16 +3,20 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
 .wrap{
     display: flex;
     flex-direction: column;
     text-align: center;
     max-width: 1144px;
     margin: 0 auto;
-}
-.upperText{
-    text-transform: uppercase;
 }
 .yellow{
     color: #F9BF3B;
@@ -22,66 +26,72 @@
 }
 
 /* promo */
-.fontYelloyUpper{
-    text-transform: uppercase;
-    font-size: 41px;
-    font-weight: 900;
-    color: #F9BF3B;
-}
-.fontWhiteUpper{
-    text-transform: uppercase;
-    font-size: 80px;
-    font-weight: 900;
-    color: #FFFFFF;
-}
-.fontWhiteUpper::before{
-    content: '____'
-}
-.fontWhiteUpper::after{
-    content: '____'
-}
 .promo{
     height: 800px;
     background-image: url('../img/main_bg.jpg');
 }
-.logo{
+.promo-logo{
     margin-top: 39px;
     font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
 }
-.promo-upperText{
-    margin-top: 47px;
+.promo-logo .logo-text{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.promo-big-text{
+    margin-top: 53px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 41px;
+}
+.promo-big-text .white{
+    font-size: 1.7em;
 }
 .promo-text{
-    text-align: left;
     margin-top: 22px;
-    line-height: 28px;
+    text-align: justify;
     font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.promo-text .yellow{
+    text-transform: uppercase;
+    font-weight: 900;
 }
 .promo-button{
-    margin: 95px auto;
-    padding-top: 23px;
-    background-color: #3AB6DA;
-    width: 313px;
+    min-width: 340px;
     height: 72px;
+    margin: 72px auto;
+    padding: 23px 15px;
+    background-color: #3AB6DA;
     color: #FFFFFF;
     text-align: center;
     font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.promo-text-more{
+    text-transform: uppercase;
+    font-weight: 300;
 }
 .img-down{
     width: 30px;
-    margin: 5px auto 60px;
+    margin: 10px auto 60px;
 }
 
 /* about Intensive */
 .aboutIntensive{
     background-color: #EFEFEF;
-
 }
 .about-info h2{
     margin-top: 88px;
     font-size: 30px;
     font-weight: 400;
     color: #252525;
+    text-transform: uppercase;
 }
 .line{
     width: 220px;
@@ -95,15 +105,15 @@
 }
 .about-steps{
     margin-top: 45px;
+    margin-bottom: 75px;
     display: flex;
     justify-content: space-between;
 }
-.step{
+.about-steps .step{
     max-width: 342px;
 }
-.step p{
+.about-steps .step p{
     margin-top: 26px;
-    margin-bottom: 75px;
     font-size: 15px;
     color: #4A4A4A;
     line-height: 21px;
@@ -116,59 +126,59 @@
     background-image: url('../img/woman_bg.png');
     background-repeat: no-repeat;
     background-position-x: 8%;
-
 }
-.optimization-text{
-    margin: 61px auto 55px 45%;
+.optimization .optimization-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 55px auto 55px 40%;
     text-align: left;
-    max-width: 750px;
+    max-width: 60%;
 }
-.optimization-text h3{
+.optimization .optimization-text h3{
     font-size: 30px;
     color: #299CBD;
     font-weight: 900;
+    text-transform: uppercase;
 }
-.optimization-text p{
+.optimization .optimization-text p{
     margin-top: 12px;
     font-size: 17px;
     color: #4A4A4A;
     line-height: 27px; 
     font-weight: 300;
 }
-.optimization-text p.last{
+.optimization .optimization-text p.last{
     font-weight: 700;
 }
 
 /* you-can-got */
 .you-can-got{
-    background-image: url('../img/second_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('../img/second_bg.jpg') center center/cover no-repeat;
 }
 .you-can-got h3{
     margin-top: 86px;
     font-size: 30px;
-    font-weight: 400;
     color: #EFEFEF;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .advantages{
-    margin-top: 40px;
-    margin-bottom: 90px;
     display: flex;
-    justify-content: center;
+    margin: 40px 10px 90px;
+    justify-content: justified;
+    color: #EFEFEF;
     font-size: 17px;
     line-height: 20px;
     font-weight: 300;
-    color: #EFEFEF;
 }
-.advantage{
+.advantages .advantage{
     display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 18%;
-    text-align: center;
 }
-.circle{
+.advantages .advantage .circle{
     display: flex;
     justify-content: center;
     width: 118px;
@@ -176,39 +186,40 @@
     background-color: #B4E2FF;
     border-radius: 50%;
 }
-.advantage p{
+.advantages .advantage p{
     margin-top: 10px;
+    min-width: 204px;
 }
 
 /* gift */
 .gift{
     background: #EFEFEF;
 }
-.gift-info{
+.gift .gift-info{
     display: flex;
     flex-direction: column;
     margin-top: 88px;
 }
-.gift-info img{
+.gift .gift-info img{
     max-width: 154px;
     margin: 0 auto;
 }
-.gift-info p{
+.gift .gift-info p{
     margin-top: 45px;
     font-size: 30px;
     line-height: 43px;
 }
-
 
 /* first-lesson */
 .first-lesson{
     margin-bottom: 54px;
 }
 .first-lesson p{
-    font-size: 23px;
+    font-size: 30px;
     margin-top: 24px;
+    font-weight: 400;
 }
-.big{
+.first-lesson .big{
     font-size: 30;
     text-transform: uppercase;
 }
@@ -221,7 +232,7 @@
     font-size: 36px;
     color: #299CBD;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 /* footer */
@@ -230,5 +241,8 @@ footer{
     align-items: center;
     background: #1A1A1A;
     height: 170px;
+    color: #888888;
+}
+footer a{
     color: #888888;
 }
